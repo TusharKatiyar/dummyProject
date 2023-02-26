@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/web.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Web Page</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item active">
+                    <a class="nav-link p-3 active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-3" href="#">Page 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-3" href="#">Page 2</a>
+                </li>
+            </ul>
+
+            <span class="material-symbols-outlined  navbar-text">
+                person
+            </span>
+
+            <a href="signup.html"><button class="btn btn-secondary navbar-text" id="up">Signup</button></a>
+
+            <span class="material-symbols-outlined navbar-text">
+                login
+            </span>
+
+            <a href="login.html" ><button class="btn btn-secondary navbar-text" id="up">Login</button></a>
+
+        </div>
+    </nav>
+
+
+    <!-- EditModal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <p></p>
+                    <h1 class="modal-title fs-5" id="editModalLabel">Your Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label id="input" class="mb-2">Name :</label>
+                                        <input type="text" class="form-control" id="in" placeholder="First Name">
+                                    </div>
+
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label id="input" class="mb-2">Designation :</label>
+                                        <input type="text" class="form-control" id="in" placeholder="Designation">
+                                    </div>
+
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label id="input" class="mb-2">Address :</label>
+                                        <input type="search" class="form-control" id="in" placeholder="Address">
+                                    </div>
+
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label id="input" class="mb-2">Contact Number :</label>
+                                        <input type="number" class="form-control" id="in" placeholder="Contact Number">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label id="input" class="mb-2">Email :</label>
+                                        <input type="email" class="form-control" id="in" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label id="input" class="mb-2">Link :</label>
+                                        <input type="url" class="form-control" id="in" placeholder="URL">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label id="input" class="mb-2">Language :</label>
+                                        <input type="text" class="form-control" id="in" placeholder="Language">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label id="input" class="mb-2">Profile Picture :</label><br>
+                                    <input type="file" id="file">
+                                </div>
+                            </div>
+
+
+                            <div class="col-4 p-0">
+                                <div class="use">
+                                    <img src="default-user.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header d-flex justify-content-between">
+            <p></p>
+            <h1 class="modal-title fs-5" id="editModalLabel">Your Details</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-6">
+                                <label id="input" class="mb-2">Name :</label>
+                                <input type="text" class="form-control" id="in" placeholder="First Name">
+                            </div>
+
+                            <div class="col-6">
+
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-6">
+                                <label id="input" class="mb-2">Designation :</label>
+                                <input type="text" class="form-control" id="in" placeholder="Designation">
+                            </div>
+
+                            <div class="col-6">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <label id="input" class="mb-2">Address :</label>
+                                <input type="search" class="form-control" id="in" placeholder="Address">
+                            </div>
+
+                            <div class="col-6">
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <label id="input" class="mb-2">Contact Number :</label>
+                                <input type="number" class="form-control" id="in" placeholder="Contact Number">
+                            </div>
+
+                            <div class="col-6">
+                                <label id="input" class="mb-2">Email :</label>
+                                <input type="email" class="form-control" id="in" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <label id="input" class="mb-2">Link :</label>
+                                <input type="url" class="form-control" id="in" placeholder="URL">
+                            </div>
+
+                            <div class="col-6">
+                                <label id="input" class="mb-2">Language :</label>
+                                <input type="text" class="form-control" id="in" placeholder="Language">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <label id="input" class="mb-2">Profile Picture :</label><br>
+                            <input type="file" id="file">
+                        </div>
+                    </div>
+
+
+                    <div class="col-4 p-0">
+                        <div class="use">
+                            <img src="./Image/webPage/default-user.png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div class="container-fluid mt-2">
+        <div class="row">
+            <div class="col-3 mt-2" style="padding-right: 0;">
+
+                <div class="bg-light">
+
+
+
+                    <div class="container-fluid">
+
+                        <div class="butt">
+                            <button type="button" class="btn btn-link button_edit" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop"><i class="fa fa-edit"
+                                    style="font-size:20px; color:black"></i></button>
+
+                            <!-- <img src="edit.svg" alt="" class="src" id="edit"> -->
+                        </div>
+                        <!-- <div >
+                        <button type="button" class="btn btn-link button_edit" data-bs-toggle="modal"
+                                data-bs-target="#editModal"></button>
+                        </div> -->
+                        <div>
+                            <div class="d-flex flex-column text-center">
+                                <div class="p-2 bd-highlight mt-4">
+                                    <img src="./Image/webPage/user.jpeg" alt="">
+                                </div>
+                                <div class="bd-highlight mt-3">
+                                    <p class="name m-0 p-0"> Vineet Kumar Singh </p>
+                                </div>
+                                <div class="bd-highlight navbar-text p-0">
+                                    <p class="p-0 m-0">Programmer</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+                            <div class="col-2 mt-2">
+                                <span class="material-symbols-outlined">
+                                    location_on
+                                </span>
+                            </div>
+                            <div class="col-10 mt-2">
+                                Masjid Banda,Hyderabad
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 mt-2">
+                                <span class="material-symbols-outlined">
+                                    call
+                                </span>
+                            </div>
+                            <div class="col-10 mt-2">
+                                9450788108
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 mt-2">
+                                <span class="material-symbols-outlined">
+                                    mail
+                                </span>
+                            </div>
+                            <div class="col-10 mt-2">
+                                vineet@beehyv.com
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 mt-2">
+                                <span class="material-symbols-outlined">
+                                    link
+                                </span>
+                            </div>
+                            <div class="col-10 mt-2">
+                                <a href="http://home.iik.ac.in~vineetks"> http://home.iik.ac.in~vineetks </a>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2 mt-2">
+                                <span class="material-symbols-outlined">
+                                    g_translate
+                                </span>
+                            </div>
+                            <div class="col-10 mt-2">
+                                English
+                            </div>
+                        </div>
+
+                        <hr>
+
+                    </div>
+                    <div class="text-center">
+                        <img src="./Image/webPage/twitter_icon.png" alt="" class="src">
+                        <img src="./Image/webPage/cloud.svg" alt="" class="src1">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-9 mt-2" >
+                
+                <div class="bg-light">
+                    <div class="container-fluid">
+                        <div class="row pt-3">
+                            <h6>BACKGROUND</h6>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-1 mt-1">
+                                <span class="material-symbols-outlined">
+                                    perm_contact_calendar
+                                </span>
+                            </div>
+                            <div class="col">
+                                <p class="head mt-1 mb-1">ABOUT</p>
+                                <hr>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-1">
+    
+                            </div>
+                            <div class="col">
+                                <p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                                    justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                    Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                                    eleifend tellus.</p>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-1">
+                                <span class="material-symbols-outlined mt-3">
+                                    meeting_room
+                                </span>
+                            </div>
+                            <div class="col">
+                                <p class="head mt-3 mb-1">WORK EXPERIENCE</p>
+                                <hr>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-1">
+    
+                            </div>
+                            <div class="col">
+    
+                                <p class="para"><b>Project 1, </b><span style="color: rgb(61, 180, 220)">Java, Angular</span></p>
+    
+                                <div class="d-flex align-items-top pt-0">                            
+                                    <i class="navbar-text mt-0 mb-0 p-0" style="font-size: 9px">Dec, 2013 - Dec, 2014 &nbsp;</i>
+                                    <span class="material-symbols-outlined" style="font-size: 12px;">
+                                        schedule
+                                    </span>
+                                    <i class="navbar-text mt-0 mb-0 p-0" style="font-size: 9px">&nbsp; 1year</i>
+                                </div>
+                                
+    
+                                <p class="para pt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                                    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                    pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+                                    justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                                    Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate
+                                    eleifend tellus.</p>
+                                <ul class="para">
+                                    <li class="bull">Random point 1</li>
+                                    <li class="bull">Random point 2</li>
+                                    <li class="bull">Random point 3</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-1">
+                                <span class="material-symbols-outlined mt-3 ">
+                                    handyman
+                                </span>
+                            </div>
+                            <div class="col">
+                                <p class="head mt-3 mb-1">SKILLS</p>
+                                <hr>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-1">
+    
+                            </div>
+                            <div class="col">
+    
+                                <div class="content pt-0 pb-0 p-1">
+                                    <p class="para1" id="upper">Web Development</p>
+                                    <button type="button" class="btn btn-primary no_hover">HTML</button>
+                                    <button type="button" class="btn btn-primary no_hover">CSS</button>
+                                    <button type="button" class="btn btn-primary no_hover">JavaScript</button>
+                                </div>
+                                <hr>
+                                <div class="content pt-0 pb-0 p-1">
+                                    <p class="para1">Compression</p>
+                                    <button type="button" class="btn btn-primary no_hover">Mpeg</button>
+                                    <button type="button" class="btn btn-primary no_hover">MP4</button>
+                                    <button type="button" class="btn btn-primary no_hover">GIF</button>
+                                </div>
+    
+    
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-1">
+                                <span class="material-symbols-outlined mt-3">
+                                    school
+                                </span>
+                            </div>
+                            <div class="col">
+                                <p class="head mt-3 mb-1">EDUCATION</p>
+                                <hr class="m-0">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1">
+    
+                            </div>
+                            <div class="col">
+                                <p class="para pt-1 mb-0 p-0">
+                                    <b>Bachelor of Technology, </b>IIT Kanpur<br>
+                                    <i class="navbar-text mt-0 mb-0 p-0" style="font-size: 9px">June, 2011 - Jan,
+                                        2014</i>
+                                </p>
+    
+                                <p class="para p-0 mt-2 mb-1"><i>CGPA: Random</i></p>
+                                <button type="button" class="btn btn-primary no_hover">DB1101-Basuc SQL</button>
+                                <button type="button" class="btn btn-primary no_hover">CS2011- Java
+                                    Introduction</button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1">
+                                <span class="material-symbols-outlined mt-3">
+                                    favorite
+                                </span>
+                            </div>
+                            <div class="col">
+                                <p class="head mt-3 mb-1">INTERESTS</p>
+                                <hr>
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-1">
+    
+                            </div>
+                            <div class="col mb-2">
+                                <p class="para mb-1">Wildlife</p>
+                                <button type="button" class="btn btn-primary no_hover">Ferrets</button>
+                                <button type="button" class="btn btn-primary no_hover">Unicorns</button>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <button type="button" class="btn"><img src="./Image/webPage/BottomRightButton.png" alt="" class="src right"></button>
+
+                </div>
+
+
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
