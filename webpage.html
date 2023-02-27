@@ -62,17 +62,24 @@
                 </li>
             </ul>
 
+            <button type="button" class="btn btn-secondary navbar-text up" id="signout">
+                <span class="align-middle"> Signout </span>
+            </button>
+
             <span class="material-symbols-outlined  navbar-text">
                 person
             </span>
 
-            <a href="signup.html"><button class="btn btn-secondary navbar-text" id="up">Signup</button></a>
+
+
+
+            <a href="/signup.html"><button class="btn btn-secondary navbar-text up">Signup</button></a>
 
             <span class="material-symbols-outlined navbar-text">
                 login
             </span>
 
-            <a href="login.html" ><button class="btn btn-secondary navbar-text" id="up">Login</button></a>
+            <a href="/login.html"><button class="btn btn-secondary navbar-text up">Login</button></a>
 
         </div>
     </nav>
@@ -159,7 +166,7 @@
 
                             <div class="col-4 p-0">
                                 <div class="use">
-                                    <img src="default-user.png" alt="">
+                                    <img src="/Image/webPage/default-user.png" alt="">
                                 </div>
                             </div>
 
@@ -173,101 +180,104 @@
         </div>
     </div>
 
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header d-flex justify-content-between">
-            <p></p>
-            <h1 class="modal-title fs-5" id="editModalLabel">Your Details</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <div class="container-fluid">
-                <div class="row">
 
-                    <div class="col-8">
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header d-flex justify-content-between">
+                    <p></p>
+                    <h1 class="modal-title fs-5" id="editModalLabel">Your Details</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid" id="edit-profile-form">
                         <div class="row">
-                            <div class="col-6">
-                                <label id="input" class="mb-2">Name :</label>
-                                <input type="text" class="form-control" id="in" placeholder="First Name">
+
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="nameModal" class="mb-2">Name :</label>
+                                        <input type="text" class="form-control" id="nameModal" placeholder="Full Name">
+                                    </div>
+
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="desgModal" class="mb-2">Designation :</label>
+                                        <input type="text" class="form-control" id="desgModal"
+                                            placeholder="Designation">
+                                    </div>
+
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="addModal" class="mb-2">Address :</label>
+                                        <input type="search" class="form-control" id="addModal" placeholder="Address">
+                                    </div>
+
+                                    <div class="col-6">
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="contModal" class="mb-2">Contact Number :</label>
+                                        <input type="number" class="form-control" id="contModal"
+                                            placeholder="Contact Number">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="emailModal" class="mb-2">Email :</label>
+                                        <input type="email" class="form-control" id="emailModal" placeholder="Email">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="linkModal" class="mb-2">Link :</label>
+                                        <input type="url" class="form-control" id="linkModal" placeholder="URL">
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="langModal" class="mb-2">Language :</label>
+                                        <input type="text" class="form-control" id="langModal" placeholder="Language">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <label for="profModal" class="mb-2">Profile Picture :</label><br>
+                                    <input type="file" id="profModal">
+                                </div>
                             </div>
 
-                            <div class="col-6">
 
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <div class="col-6">
-                                <label id="input" class="mb-2">Designation :</label>
-                                <input type="text" class="form-control" id="in" placeholder="Designation">
+                            <div class="col-4 p-0">
+                                <div class="use">
+                                    <img id="profilePicdummy" src="./Image/webPage/default-user.png" alt="">
+                                </div>
                             </div>
 
-                            <div class="col-6">
-
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <label id="input" class="mb-2">Address :</label>
-                                <input type="search" class="form-control" id="in" placeholder="Address">
-                            </div>
-
-                            <div class="col-6">
-
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <label id="input" class="mb-2">Contact Number :</label>
-                                <input type="number" class="form-control" id="in" placeholder="Contact Number">
-                            </div>
-
-                            <div class="col-6">
-                                <label id="input" class="mb-2">Email :</label>
-                                <input type="email" class="form-control" id="in" placeholder="Email">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-6">
-                                <label id="input" class="mb-2">Link :</label>
-                                <input type="url" class="form-control" id="in" placeholder="URL">
-                            </div>
-
-                            <div class="col-6">
-                                <label id="input" class="mb-2">Language :</label>
-                                <input type="text" class="form-control" id="in" placeholder="Language">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <label id="input" class="mb-2">Profile Picture :</label><br>
-                            <input type="file" id="file">
                         </div>
                     </div>
-
-
-                    <div class="col-4 p-0">
-                        <div class="use">
-                            <img src="./Image/webPage/default-user.png" alt="">
-                        </div>
-                    </div>
-
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Save</button>
                 </div>
             </div>
         </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Save</button>
-        </div>
-      </div>
     </div>
-  </div>
 
 
 
@@ -283,7 +293,7 @@
 
                         <div class="butt">
                             <button type="button" class="btn btn-link button_edit" data-bs-toggle="modal"
-                                data-bs-target="#staticBackdrop"><i class="fa fa-edit"
+                                data-bs-target="#staticBackdrop"><i class="fa fa-edit" id="edit-button"
                                     style="font-size:20px; color:black"></i></button>
 
                             <!-- <img src="edit.svg" alt="" class="src" id="edit"> -->
@@ -295,13 +305,13 @@
                         <div>
                             <div class="d-flex flex-column text-center">
                                 <div class="p-2 bd-highlight mt-4">
-                                    <img src="./Image/webPage/user.jpeg" alt="">
+                                    <img id="img-thumbnail" src="./Image/webPage/user.jpeg" alt="">
                                 </div>
                                 <div class="bd-highlight mt-3">
-                                    <p class="name m-0 p-0"> Vineet Kumar Singh </p>
+                                    <p class="name m-0 p-0" id="fullName"> Vineet Kumar Singh </p>
                                 </div>
                                 <div class="bd-highlight navbar-text p-0">
-                                    <p class="p-0 m-0">Programmer</p>
+                                    <p class="p-0 m-0" id="designation">Programmer</p>
                                 </div>
 
                             </div>
@@ -319,7 +329,7 @@
                                     location_on
                                 </span>
                             </div>
-                            <div class="col-10 mt-2">
+                            <div class="col-10 mt-2" id="address">
                                 Masjid Banda,Hyderabad
                             </div>
 
@@ -331,7 +341,7 @@
                                     call
                                 </span>
                             </div>
-                            <div class="col-10 mt-2">
+                            <div class="col-10 mt-2" id="contactNumber">
                                 9450788108
                             </div>
 
@@ -343,7 +353,7 @@
                                     mail
                                 </span>
                             </div>
-                            <div class="col-10 mt-2">
+                            <div class="col-10 mt-2" id="email">
                                 vineet@beehyv.com
                             </div>
 
@@ -356,7 +366,7 @@
                                 </span>
                             </div>
                             <div class="col-10 mt-2">
-                                <a href="http://home.iik.ac.in~vineetks"> http://home.iik.ac.in~vineetks </a>
+                                <a id="link" href="http://home.iik.ac.in~vineetks"> http://home.iik.ac.in~vineetks </a>
                             </div>
 
                         </div>
@@ -367,7 +377,7 @@
                                     g_translate
                                 </span>
                             </div>
-                            <div class="col-10 mt-2">
+                            <div class="col-10 mt-2" id="language">
                                 English
                             </div>
                         </div>
@@ -383,8 +393,8 @@
                 </div>
             </div>
 
-            <div class="col-9 mt-2" >
-                
+            <div class="col-9 mt-2">
+
                 <div class="bg-light">
                     <div class="container-fluid">
                         <div class="row pt-3">
@@ -402,10 +412,10 @@
                                 <hr>
                             </div>
                         </div>
-    
+
                         <div class="row">
                             <div class="col-1">
-    
+
                             </div>
                             <div class="col">
                                 <p class="para">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
@@ -418,7 +428,7 @@
                                     eleifend tellus.</p>
                             </div>
                         </div>
-    
+
                         <div class="row">
                             <div class="col-1">
                                 <span class="material-symbols-outlined mt-3">
@@ -430,25 +440,28 @@
                                 <hr>
                             </div>
                         </div>
-    
+
                         <div class="row">
                             <div class="col-1">
-    
+
                             </div>
                             <div class="col">
-    
-                                <p class="para"><b>Project 1, </b><span style="color: rgb(61, 180, 220)">Java, Angular</span></p>
-    
-                                <div class="d-flex align-items-top pt-0">                            
-                                    <i class="navbar-text mt-0 mb-0 p-0" style="font-size: 9px">Dec, 2013 - Dec, 2014 &nbsp;</i>
+
+                                <p class="para"><b>Project 1, </b><span style="color: rgb(61, 180, 220)">Java,
+                                        Angular</span></p>
+
+                                <div class="d-flex align-items-top pt-0">
+                                    <i class="navbar-text mt-0 mb-0 p-0" style="font-size: 9px">Dec, 2013 - Dec, 2014
+                                        &nbsp;</i>
                                     <span class="material-symbols-outlined" style="font-size: 12px;">
                                         schedule
                                     </span>
                                     <i class="navbar-text mt-0 mb-0 p-0" style="font-size: 9px">&nbsp; 1year</i>
                                 </div>
-                                
-    
-                                <p class="para pt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+
+
+                                <p class="para pt-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                                    commodo
                                     ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
                                     parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
                                     pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
@@ -463,7 +476,7 @@
                                 </ul>
                             </div>
                         </div>
-    
+
                         <div class="row">
                             <div class="col-1">
                                 <span class="material-symbols-outlined mt-3 ">
@@ -475,13 +488,13 @@
                                 <hr>
                             </div>
                         </div>
-    
+
                         <div class="row">
                             <div class="col-1">
-    
+
                             </div>
                             <div class="col">
-    
+
                                 <div class="content pt-0 pb-0 p-1">
                                     <p class="para1" id="upper">Web Development</p>
                                     <button type="button" class="btn btn-primary no_hover">HTML</button>
@@ -495,11 +508,11 @@
                                     <button type="button" class="btn btn-primary no_hover">MP4</button>
                                     <button type="button" class="btn btn-primary no_hover">GIF</button>
                                 </div>
-    
-    
+
+
                             </div>
                         </div>
-    
+
                         <div class="row">
                             <div class="col-1">
                                 <span class="material-symbols-outlined mt-3">
@@ -513,7 +526,7 @@
                         </div>
                         <div class="row">
                             <div class="col-1">
-    
+
                             </div>
                             <div class="col">
                                 <p class="para pt-1 mb-0 p-0">
@@ -521,7 +534,7 @@
                                     <i class="navbar-text mt-0 mb-0 p-0" style="font-size: 9px">June, 2011 - Jan,
                                         2014</i>
                                 </p>
-    
+
                                 <p class="para p-0 mt-2 mb-1"><i>CGPA: Random</i></p>
                                 <button type="button" class="btn btn-primary no_hover">DB1101-Basuc SQL</button>
                                 <button type="button" class="btn btn-primary no_hover">CS2011- Java
@@ -539,10 +552,10 @@
                                 <hr>
                             </div>
                         </div>
-    
+
                         <div class="row">
                             <div class="col-1">
-    
+
                             </div>
                             <div class="col mb-2">
                                 <p class="para mb-1">Wildlife</p>
@@ -550,20 +563,22 @@
                                 <button type="button" class="btn btn-primary no_hover">Unicorns</button>
                             </div>
                         </div>
-    
+
                     </div>
-                    <button type="button" class="btn"><img src="./Image/webPage/BottomRightButton.png" alt="" class="src right"></button>
+                    <button type="button" class="btn"><img src="./Image/webPage/BottomRightButton.png" alt=""
+                            class="src right"></button>
 
                 </div>
 
 
-                
+
             </div>
         </div>
     </div>
 
 
 
+    <script src="/webpage.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

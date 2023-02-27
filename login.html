@@ -23,7 +23,7 @@
 
     <div class="loginbox">
 
-        <form>
+        <form id="loginForm">
 
             <div class="login_selector">
                 <select name="language" id="language">
@@ -39,8 +39,8 @@
             </div>
 
             <div class="box">
-                <input class="input" type="text" required placeholder="Email or phone or username"><br>
-                <input class="input" type="password" required placeholder="Password">
+                <input class="input" type="text" id="email" required placeholder="Email or phone or username"><br>
+                <input class="input" type="password" id="password" required placeholder="Password">
             </div>
 
             <br>
@@ -63,7 +63,7 @@
 
             <div class="sign_up">
                 <label id="label1">Need an account?</label>
-                <a id="fgt" href="#">Sign up</a>
+                <a id="fgt" href="/signup.html">Sign up</a>
             </div>
 
         </form>
@@ -79,6 +79,8 @@
         <a href="#" class="last">Privacy Policy</a>
 
     </div>
+
+    <script src="login.js"></script>
 
 
 </body>
