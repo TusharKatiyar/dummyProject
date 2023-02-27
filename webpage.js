@@ -7,7 +7,7 @@ if(localStorage.getItem("user")){
     // alert("You are already logged in")
 }
 else {
-    location.replace("/signin.html")
+    location.replace("/login.html")
 }
 
 // profile img change at edit-profile at webpage
@@ -113,5 +113,5 @@ let logoutButton = document.getElementById("signout")
 logoutButton.addEventListener("click", (e) => {
     localStorage.removeItem("user")
     alert("You successfully signout!!!")
-    location.replace("/signin.html")
+    location.replace("/login.html")
 })

@@ -85,7 +85,7 @@ form.addEventListener("submit", (e) => {
                     alert(
                         "Employee is already registered with the given employee ID!!!\nRedirecting to sigin page..."
                     );
-                    location.replace("/signin.html");
+                    location.replace("/login.html");
                     flag = false;
                 }
             });
